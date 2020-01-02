@@ -4,6 +4,8 @@
     * [My Version #1](https://github.com/Gonzz-96/material-design-codelab/tree/101-starter)
 * [Material Design Codelab #2](https://codelabs.developers.google.com/codelabs/mdc-102-kotlin/#0)
     * [My version #2](https://github.com/Gonzz-96/material-design-codelab/tree/102-starter)
+* [Material Design Codelab #3](https://codelabs.developers.google.com/codelabs/mdc-103-kotlin/)
+    * [My Version #3](https://github.com/Gonzz-96/material-design-codelab/tree/103-starter)
 
 This components help to build beautiful layouts in Android, iOs, Web and Flutter.
 
@@ -144,3 +146,29 @@ Usage:
     </com.google.android.material.card.MaterialCardView>
 ```
 The MaterialCardView can contain any elements inside of it.
+
+For animations, we create an xml files in res/animator like this:
+
+```
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Pressed state -->
+    <item
+        android:state_enabled="true"
+        android:state_pressed="true">
+        <set>
+            <objectAnimator
+                android:duration="100"
+                android:propertyName="translationZ"
+                android:valueTo="2dp"
+                android:valueType="floatType" />
+            <objectAnimator
+                android:duration="0"
+                android:propertyName="elevation"
+                android:valueTo="6dp"
+                android:valueType="floatType" />
+        </set>
+    </item>
+```
