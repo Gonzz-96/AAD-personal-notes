@@ -172,3 +172,12 @@ For animations, we create an xml files in res/animator like this:
         </set>
     </item>
 ```
+
+<hr>
+
+To create a backdrop menu:
+
+
+1.
+2. Create the layout
+3.
