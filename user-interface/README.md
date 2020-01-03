@@ -1,6 +1,5 @@
 # [User Interface](https://developers.google.com/certification/associate-android-developer/study-guide/user-interface)
 
-
 ## The developer should:
 
 * Undersand the Android activity lifecycle
